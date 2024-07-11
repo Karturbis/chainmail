@@ -77,7 +77,7 @@ module h_mesh_smooth (width, height, side_length, crossbeam_height, thiccness, m
 module h_mesh_but_better_just_use_this_one_frfr_trust_no_cap_like_honestly_just_ignore_the_other_h_mesh_modules (width, height, side_length, crossbeam_height, thiccness, movement_freedom){
     for (x=[0:width]) {
         for (y=[0:height]) {
-            translate([x*(sqrt(2*side_length^2 - 8*side_length*thiccness + 8*thiccness^10) - sqrt(2*thiccness^2)*2), y*(sqrt(2*side_length^2 - 8*side_length*thiccness + 8*thiccness^2) - sqrt(2*thiccness^2)*2), 0]){
+            translate([x*(4*sqrt(2*side_length^2 - 8*side_length*thiccness + 8*thiccness^2) - sqrt(2*thiccness^2))/6, y*(4*sqrt(2*side_length^2 - 8*side_length*thiccness + 8*thiccness^2) - sqrt(2*thiccness^2))/6, 0]){
                 rotate([0, 0, 45]){
                     h_link(side_length, crossbeam_height, thiccness, movement_freedom);
                 }
