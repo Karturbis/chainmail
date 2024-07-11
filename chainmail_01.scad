@@ -12,8 +12,10 @@ module h_bridge(side_length, crossbeam_height, thiccness, movement_freedom){
             cube([side_length, thiccness, crossbeam_height], true);
         }
         // support pillar
-        translate([0, 0, -movement_freedom]){
-            cube([thiccness, thiccness, crossbeam_height], true);
+        if  (crossbeam_height != 0){
+            translate([0, 0, -movement_freedom]){
+                cube([thiccness, thiccness, thiccness], true);
+            }
         }
         // edge blocks
         translate([side_length/2-thiccness/2, side_length/2-thiccness/2, -movement_freedom]){
@@ -103,4 +105,4 @@ module h_mesh_but_better_just_use_this_one_frfr_trust_no_cap_like_honestly_just_
 
 //h_bridge(10, 1, 1.5, 0);
 //h_link(10, 1, 1.5, 0);
-h_mesh_but_better_just_use_this_one_frfr_trust_no_cap_like_honestly_just_ignore_the_other_h_mesh_modules(6, 6, 8, 0, 0.9, 0.3);
+h_mesh_but_better_just_use_this_one_frfr_trust_no_cap_like_honestly_just_ignore_the_other_h_mesh_modules(3, 3, 10, 0, 0.8, 0.3);
