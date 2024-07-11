@@ -81,7 +81,8 @@ module h_mesh_but_better_just_use_this_one_frfr_trust_no_cap_like_honestly_just_
     if (crossbeam_height != 0){
         for (x=[0:width]) {
             for (y=[0:height]) {
-                translate([x*(sqrt(side_length^2 / 2)+0.75*sqrt(2*thiccness^2)), y*(sqrt(side_length^2 / 2)+0.75*sqrt(2*thiccness^2)), 0]){                        rotate([0, 0, 45]){
+                translate([x*(3*(sqrt(2*side_length^2 - 8*side_length*thiccness + 8*thiccness^2)+sqrt(2*thiccness^2))/4), y*(3*(sqrt(2*side_length^2 - 8*side_length*thiccness + 8*thiccness^2)+sqrt(2*thiccness^2))/4), 0]){
+                    rotate([0, 0, 45]){
                         h_link(side_length, crossbeam_height, thiccness, movement_freedom);
                     }
                 }
@@ -105,4 +106,4 @@ module h_mesh_but_better_just_use_this_one_frfr_trust_no_cap_like_honestly_just_
 
 //h_bridge(10, 1, 1.5, 0);
 //h_link(10, 1, 1.5, 0);
-h_mesh_but_better_just_use_this_one_frfr_trust_no_cap_like_honestly_just_ignore_the_other_h_mesh_modules(6, 6, 15, 1.7, 2.6, 0.3);
+h_mesh_but_better_just_use_this_one_frfr_trust_no_cap_like_honestly_just_ignore_the_other_h_mesh_modules(6, 6, 15, 1.5, 2, 0.3);
