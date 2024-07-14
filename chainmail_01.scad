@@ -1,4 +1,4 @@
-module h_bridge(side_length, crossbeam_height, thiccness, movement_freedom){
+    module h_bridge(side_length, crossbeam_height, thiccness, movement_freedom){
     union(){
         // beams:
         translate([-(side_length-thiccness)/2, 0, 0]){
@@ -106,4 +106,4 @@ module h_mesh_but_better_just_use_this_one_frfr_trust_no_cap_like_honestly_just_
 
 //h_bridge(10, 1, 1.5, 0);
 //h_link(10, 1, 1.5, 0);
-h_mesh_but_better_just_use_this_one_frfr_trust_no_cap_like_honestly_just_ignore_the_other_h_mesh_modules(6, 6, 15, 1.5, 2, 0.3);
+h_mesh_but_better_just_use_this_one_frfr_trust_no_cap_like_honestly_just_ignore_the_other_h_mesh_modules(7, 7, 15, 1.5, 2, 0.3);
